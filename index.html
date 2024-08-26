@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head  lang="zh-tw">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>計算機</title>
+	<link rel="stylesheet" href="./np.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </head>
+<body>
+	<table style="width:90%; border: none;">
+    <thead>
+        <tr>
+			<th>編號</th>
+            <th colspan="2">攻擊力</th>
+			<th colspan="2">血量</th>
+			<th colspan="2">體重</th>
+			<th>陣營</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>#1</td>
+            <td id="atk1">2</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(1)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(1)">
+					-
+				</div>
+			</td>
+			<td id="hp1">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(1)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(1)">
+					-
+				</div>
+			</td>
+			<td id="wed1">65</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(1)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(1)">
+					-
+				</div>
+			</td>
+			<td id="status1" class="icon" onclick="changeStatus(1)">犯人</td>
+        </tr>
+		
+		<tr>
+            <td>#2</td>
+            <td id="atk2">6</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(2)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(2)">
+					-
+				</div>
+			</td>
+			<td id="hp2">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(2)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(2)">
+					-
+				</div>
+			</td>
+			<td id="wed2">75</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(2)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(2)">
+					-
+				</div>
+			</td>
+			<td id="status2" class="icon" onclick="changeStatus(2)">犯人</td>
+        </tr>
+		
+		<tr>
+            <td>#3</td>
+            <td id="atk3">6</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(3)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(3)">
+					-
+				</div>
+			</td>
+			<td id="hp3">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(3)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(3)">
+					-
+				</div>
+			</td>
+			<td id="wed3">60</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(3)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(3)">
+					-
+				</div>
+			</td>
+			<td id="status3" class="icon" onclick="changeStatus(3)">犯人</td>
+        </tr>
+		
+		<tr>
+            <td>#4</td>
+            <td id="atk4">6</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(4)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(4)">
+					-
+				</div>
+			</td>
+			<td id="hp4">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(4)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(4)">
+					-
+				</div>
+			</td>
+			<td id="wed4">60</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(4)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(4)">
+					-
+				</div>
+			</td>
+			<td id="status4" class="icon" onclick="changeStatus(4)">犯人</td>
+        </tr>
+		<tr>
+            <td>#5</td>
+            <td id="atk5">1</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(5)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(5)">
+					-
+				</div>
+			</td>
+			<td id="hp5">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(5)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(5)">
+					-
+				</div>
+			</td>
+			<td id="wed5">60</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(5)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(5)">
+					-
+				</div>
+			</td>
+			<td id="status5" class="icon" onclick="changeStatus(5)">犯人</td>
+        </tr>
+		
+		<tr>
+            <td>#6</td>
+            <td id="atk6">6</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(6)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(6)">
+					-
+				</div>
+			</td>
+			<td id="hp6">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(6)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(6)">
+					-
+				</div>
+			</td>
+			<td id="wed6">65</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(6)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(6)">
+					-
+				</div>
+			</td>
+			<td id="status6" class="icon" onclick="changeStatus(6)">犯人</td>
+        </tr>
+		
+		<tr>
+            <td>#7</td>
+            <td id="atk7">4</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(7)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(7)">
+					-
+				</div>
+			</td>
+			<td id="hp7">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(7)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(7)">
+					-
+				</div>
+			</td>
+			<td id="wed7">60</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(7)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(7)">
+					-
+				</div>
+			</td>
+			<td id="status7" class="icon" onclick="changeStatus(7)">犯人</td>
+        </tr>
+		<tr>
+            <td>#8</td>
+            <td id="atk8">4</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(8)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(8)">
+					-
+				</div>
+			</td>
+			<td id="hp8">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(8)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(8)">
+					-
+				</div>
+			</td>
+			<td id="wed8">65</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(8)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(8)">
+					-
+				</div>
+			</td>
+			<td id="status8" class="icon" onclick="changeStatus(8)">犯人</td>
+        </tr>
+		<tr>
+            <td>#9</td>
+            <td id="atk9">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(9)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(9)">
+					-
+				</div>
+			</td>
+			<td id="hp9">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(9)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(9)">
+					-
+				</div>
+			</td>
+			<td id="wed9">65</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(9)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(9)">
+					-
+				</div>
+			</td>
+			<td id="status9" class="icon" onclick="changeStatus(9)">犯人</td>
+        </tr>
+		<tr>
+            <td>#10</td>
+            <td id="atk10">6</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="atkAdd(10)">
+					+
+				</div>
+				<div class="icon" onclick="atkRed(10)">
+					-
+				</div>
+			</td>
+			<td id="hp10">3</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="hpAdd(10)">
+					+
+				</div>
+				<div class="icon" onclick="hpRed(10)">
+					-
+				</div>
+			</td>
+			<td id="wed10">75</td>
+			<td class="iconBlack">
+				<div class="icon" onclick="wedAdd(10)">
+					+
+				</div>
+				<div class="icon" onclick="wedRed(10)">
+					-
+				</div>
+			</td>
+			<td id="status10" class="icon" onclick="changeStatus(10)">犯人</td>
+        </tr>
+		<tr>
+			<td >
+			</td>
+			<td >
+			</td>
+			<td >
+			</td>
+			<td >
+			</td>
+			<td >
+			</td>
+			<td id= "totalWed">
+				810
+			</td>
+			<td >
+			</td>
+			<td >
+			</td>
+		</tr>
+    </tbody>
+	</table>
+</body>
+</html>
+
+
+<script>
+
+	var atkAdd = function ( no ){
+		var aa = $("#atk" + no);
+		var value = parseInt(aa.html());
+		value = value + 1 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var atkRed = function ( no ){
+		var aa = $("#atk" + no);
+		var value = parseInt(aa.html());
+		value = value - 1 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var hpAdd = function ( no ){
+		var aa = $("#hp" + no);
+		var value = parseInt(aa.html());
+		value = value + 1 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var hpRed = function ( no ){
+		var aa = $("#hp" + no);
+		var value = parseInt(aa.html());
+		value = value - 1 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var wedAdd = function ( no ){
+		var aa = $("#wed" + no);
+		var value = parseInt(aa.html());
+		value = value + 5 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var wedRed = function ( no ){
+		var aa = $("#wed" + no);
+		var value = parseInt(aa.html());
+		value = value - 5 ;
+		aa.html(value);
+		changeWed();
+	}
+	
+	var changeStatus = function( no ){
+		var aa = $("#status" + no);
+		if( aa.html() == "犯人"){
+			aa.html("獄警");
+		}
+		else{
+			aa.html("犯人");
+		}
+		changeWed();
+	}
+	
+	var changeWed = function(){
+		var totalWed = 0;
+		for (var i = 1 ; i <=10 ; i++ ){
+			var aa = $("#hp" + i);
+			if( parseInt(aa.html()) > 0 ){
+				if( $("#status" + i).html() == "犯人"){
+					totalWed = totalWed + parseInt($("#wed" + i).html());
+				}
+			}
+		}
+		$("#totalWed").html(totalWed);
+	}
+	
+	changeWed();
+</script>
