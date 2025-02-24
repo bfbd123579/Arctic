@@ -18,8 +18,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>#1</td>
+        <tr id="tr1">
+            <td id="no1"   onclick="team(1)">#1</td>
             <td id="atk1">2</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(1)">
@@ -50,8 +50,8 @@
 			<td id="status1" class="icon" onclick="changeStatus(1)">犯人</td>
         </tr>
 		
-		<tr>
-            <td>#2</td>
+		<tr id="tr2">
+            <td id="no2"   onclick="team(2)">#2</td>
             <td id="atk2">6</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(2)">
@@ -82,8 +82,8 @@
 			<td id="status2" class="icon" onclick="changeStatus(2)">犯人</td>
         </tr>
 		
-		<tr>
-            <td>#3</td>
+		<tr id="tr3">
+            <td id="no3"   onclick="team(3)">#3</td>
             <td id="atk3">6</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(3)">
@@ -114,8 +114,8 @@
 			<td id="status3" class="icon" onclick="changeStatus(3)">犯人</td>
         </tr>
 		
-		<tr>
-            <td>#4</td>
+		<tr id="tr4">
+            <td id="no4"   onclick="team(4)">#4</td>
             <td id="atk4">6</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(4)">
@@ -145,8 +145,8 @@
 			</td>
 			<td id="status4" class="icon" onclick="changeStatus(4)">犯人</td>
         </tr>
-		<tr>
-            <td>#5</td>
+		<tr id="tr5">
+            <td id="no5"   onclick="team(5)">#5</td>
             <td id="atk5">1</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(5)">
@@ -177,8 +177,8 @@
 			<td id="status5" class="icon" onclick="changeStatus(5)">犯人</td>
         </tr>
 		
-		<tr>
-            <td>#6</td>
+		<tr id="tr6">
+            <td id="no6"   onclick="team(6)">#6</td>
             <td id="atk6">6</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(6)">
@@ -209,8 +209,8 @@
 			<td id="status6" class="icon" onclick="changeStatus(6)">犯人</td>
         </tr>
 		
-		<tr>
-            <td>#7</td>
+		<tr id="tr7">
+            <td id="no7"   onclick="team(7)">#7</td>
             <td id="atk7">4</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(7)">
@@ -240,8 +240,8 @@
 			</td>
 			<td id="status7" class="icon" onclick="changeStatus(7)">犯人</td>
         </tr>
-		<tr>
-            <td>#8</td>
+		<tr id="tr8">
+            <td id="no8"   onclick="team(8)">#8</td>
             <td id="atk8">4</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(8)">
@@ -271,8 +271,8 @@
 			</td>
 			<td id="status8" class="icon" onclick="changeStatus(8)">犯人</td>
         </tr>
-		<tr>
-            <td>#9</td>
+		<tr id="tr9">
+            <td id="no9"   onclick="team(9)">#9</td>
             <td id="atk9">3</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(9)">
@@ -302,8 +302,8 @@
 			</td>
 			<td id="status9" class="icon" onclick="changeStatus(9)">犯人</td>
         </tr>
-		<tr>
-            <td>#10</td>
+		<tr id="tr10">
+            <td id="no10"   onclick="team(10)">#10</td>
             <td id="atk10">6</td>
 			<td class="iconBlack">
 				<div class="icon" onclick="atkAdd(10)">
@@ -334,18 +334,71 @@
 			<td id="status10" class="icon" onclick="changeStatus(10)">犯人</td>
         </tr>
 		<tr>
-			<td >
+			<td style="font-size: medium;">
+				隊伍總攻擊力
 			</td>
-			<td >
+			<td id="teamAtk">
+				0
 			</td>
-			<td >
+			<td onclick="teamAtkAdd()">
+				+
 			</td>
-			<td >
+			<td onclick="teamAtkRed()">
+				-
 			</td>
-			<td >
+			<td onclick="reTeamAtk()">
+				Re
 			</td>
 			<td id= "totalWed">
-				810
+				650
+			</td>
+			<td >
+			</td>
+			<td >
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size: medium; height: 50px;">
+				+1
+			</td>
+			<td style="font-size: medium; height: 50px;">
+				+2
+			</td>
+			<td style="font-size: medium; height: 50px;">
+				+3
+			</td>
+			<td style="font-size: medium; height: 50px;">
+				+4
+			</td>
+			<td style="font-size: medium; height: 50px;">
+				+5
+			</td>
+			<td style="font-size: medium; height: 50px;">
+				+6
+			</td>
+			<td style="font-size: medium; height: 50px;">
+			</td>
+			<td style="font-size: medium; height: 50px;">
+			</td>
+		</tr>
+		<tr>
+			<td id="teamAtk1">
+				
+			</td>
+			<td id="teamAtk2">
+				
+			</td>
+			<td id="teamAtk3">
+				
+			</td>
+			<td id="teamAtk4">
+				
+			</td>
+			<td id="teamAtk5">
+				
+			</td>
+			<td id="teamAtk6">
+				
 			</td>
 			<td >
 			</td>
@@ -354,12 +407,129 @@
 		</tr>
     </tbody>
 	</table>
+	<table style="width:90%; border: none; ">
+		<td>
+			<select style="font-size: larger;" value="0" onchange="p1Select(this.value)">
+				<option value="0" SELECTED  disabled>play 1</option>
+				<option value="1">一號</option>
+				<option value="2">二號</option>
+				<option value="3">三號</option>
+				<option value="4">四號</option>
+				<option value="5">五號</option>
+				<option value="6">六號</option>
+				<option value="7">七號</option>
+				<option value="8">八號</option>
+				<option value="9">九號</option>
+				<option value="10">十號</option>
+			</select>
+		</td>
+		<td>
+			<select style="font-size: larger;" id="p1RollValue" onchange="p1Sum()">
+				<option value=1>+1</option>
+				<option value=2>+2</option>
+				<option value=3>+3</option>
+				<option value=4>+4</option>
+				<option value=5>+5</option>
+				<option value=6>+6</option>
+				<option value=7>+7</option>
+				<option value=8>+8</option>
+				<option value=9>+9</option>
+				<option value=10>+10</option>
+			</select>
+		</td>
+		<td>
+			<select style="font-size: larger;" id="p1AddValue" onchange="p1Sum()">
+				<option value=0>0</option>
+				<option value=1>+1</option>
+				<option value=2>+2</option>
+				<option value=3>+3</option>
+				<option value=4>+4</option>
+				<option value=5>+5</option>
+				<option value=6>+6</option>
+				<option value=7>+7</option>
+				<option value=8>+8</option>
+				<option value=9>+9</option>
+				<option value=10>+10</option>
+			</select>
+		</td>
+		<td  id="play1Atk" value="0">
+			0
+		</td>
+	</table>
+	<table style="width:90%; border: none; ">
+		<td>
+			<select style="font-size: larger;" value="0" onchange="p2Select(this.value)">
+				<option value="0" SELECTED  disabled>play 2</option>
+				<option value="1">一號</option>
+				<option value="2">二號</option>
+				<option value="3">三號</option>
+				<option value="4">四號</option>
+				<option value="5">五號</option>
+				<option value="6">六號</option>
+				<option value="7">七號</option>
+				<option value="8">八號</option>
+				<option value="9">九號</option>
+				<option value="10">十號</option>
+			</select>
+		</td>
+		<td>
+			<select style="font-size: larger;" id="p2RollValue" onchange="p2Sum()">
+				<option value=1>+1</option>
+				<option value=2>+2</option>
+				<option value=3>+3</option>
+				<option value=4>+4</option>
+				<option value=5>+5</option>
+				<option value=6>+6</option>
+				<option value=7>+7</option>
+				<option value=8>+8</option>
+				<option value=9>+9</option>
+				<option value=10>+10</option>
+			</select>
+		</td>
+		<td>
+			<select style="font-size: larger;" id="p2AddValue" onchange="p2Sum()">
+				<option value=0>0</option>
+				<option value=1>+1</option>
+				<option value=2>+2</option>
+				<option value=3>+3</option>
+				<option value=4>+4</option>
+				<option value=5>+5</option>
+				<option value=6>+6</option>
+				<option value=7>+7</option>
+				<option value=8>+8</option>
+				<option value=9>+9</option>
+				<option value=10>+10</option>
+			</select>
+		</td>
+		<td  id="play2Atk" value="0">
+			0
+		</td>
+	</table>
 </body>
 </html>
 
 
 <script>
-
+	var p1Select = function( no ){
+		$("#play1Atk").val(parseInt($("#atk" + no).html()));
+		p1Sum();
+	}
+	
+	var p1Sum = function( ){
+		let ps = parseInt($("#play1Atk").val()) + parseInt($("#p1RollValue").val()) + parseInt($("#p1AddValue").val());
+		$("#play1Atk").html(ps);
+	}
+	
+	var p2Select = function( no ){
+		$("#play2Atk").val(parseInt($("#atk" + no).html()));
+		p2Sum();
+	}
+	
+	var p2Sum = function( ){
+		let ps = parseInt($("#play2Atk").val()) + parseInt($("#p2RollValue").val()) + parseInt($("#p2AddValue").val());
+		$("#play2Atk").html(ps);
+	}
+	
 	var atkAdd = function ( no ){
 		var aa = $("#atk" + no);
 		var value = parseInt(aa.html());
@@ -412,9 +582,11 @@
 		var aa = $("#status" + no);
 		if( aa.html() == "犯人"){
 			aa.html("獄警");
+			document.getElementById("status" + no).style = "background-color:cornflowerblue";
 		}
 		else{
 			aa.html("犯人");
+			document.getElementById("status" + no).style = "background-color:white";
 		}
 		changeWed();
 	}
@@ -424,13 +596,68 @@
 		for (var i = 1 ; i <=10 ; i++ ){
 			var aa = $("#hp" + i);
 			if( parseInt(aa.html()) > 0 ){
+				var dc = document.getElementById("tr" + i);
+				dc.classList.remove('deadColor');
 				if( $("#status" + i).html() == "犯人"){
 					totalWed = totalWed + parseInt($("#wed" + i).html());
 				}
+			}
+			else{
+				var dc = document.getElementById("tr" + i);
+				dc.classList.add('deadColor');
 			}
 		}
 		$("#totalWed").html(totalWed);
 	}
 	
+	var team = function( no ){
+		var dc = document.getElementById("no" + no);
+		if(dc.classList.contains('teamColor')){
+			dc.classList.remove('teamColor');
+		}
+		else {
+			dc.classList.add('teamColor');
+		}
+		teamAtkSum();
+	}
+	
+	var teamAtkSum = function(){
+		var teamAll = document.querySelectorAll(".teamColor");
+		var teamAtk = 0;
+		teamAll.forEach(member => { 
+			teamAtk = teamAtk + parseInt($("#" + member.id.replace('no','atk')).html());
+		});
+		$("#teamAtk").html(teamAtk);
+		changeTeamAtk();
+	}
+	
+	var teamAtkAdd = function(){
+		var teamAtk = parseInt($("#teamAtk").html());
+		$("#teamAtk").html( teamAtk +1);
+		changeTeamAtk();
+	}
+	
+	
+	var teamAtkRed = function(){
+		var teamAtk = parseInt($("#teamAtk").html());
+		$("#teamAtk").html( teamAtk -1);
+		changeTeamAtk();
+	}
+	
+	var reTeamAtk = function(){
+		var teamAll = document.querySelectorAll(".teamColor");
+		teamAll.forEach(member => { 
+			var dc = document.getElementById(member.id);
+			dc.classList.remove('teamColor');
+		});
+		teamAtkSum();
+	}
+	
+	var changeTeamAtk = function(){
+		var teamAtk = parseInt($("#teamAtk").html());
+		for (var i=1 ; i<=6 ; i++){
+			$("#teamAtk" + i).html(teamAtk+i);
+		}
+	}
 	changeWed();
 </script>
