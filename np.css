@@ -18,9 +18,17 @@ tfoot {
     color: #fff;
 }
 
+.teamColor{
+	background-color:deepskyblue;
+}
+
+.deadColor{
+	background-color:black;
+}
+
 .iconBlack{
 	padding: 0px;
-	height: 10;
+	height: 10px;
 }
 
 .icon{
